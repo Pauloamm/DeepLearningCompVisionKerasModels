@@ -15,8 +15,9 @@ def LoadImageLinks():
     linkList.append('https://media.istockphoto.com/photos/basketball-picture-id170096587?k=20&m=170096587&s=612x612&w=0&h=Umu6ELi7aPSpCPE7hMPKWVYZUoRfdNek2ieBI5RrCCs=')#basketball ball
     linkList.append('https://carwow-uk-wp-3.imgix.net/Volvo-XC40-white-scaled.jpg')#car
     linkList.append('https://m.media-amazon.com/images/I/41tCIsGV8UL.jpg')#chair
-    linkList.append('https://ichef.bbci.co.uk/news/976/cpsprodpb/12AF/production/_122638740_sullideals.jpg')#man
-    linkList.append('https://static01.nyt.com/images/2019/11/17/books/review/17Salam/Salam1-superJumbo.jpg')#woman
+    linkList.append('https://d1aeri3ty3izns.cloudfront.net/media/23/235459/600/preview_4.jpg')#guitar
+    linkList.append('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Weizenbier.jpg/640px-Weizenbier.jpg')#beer
+
     return linkList
 
 def xCeptionModel(linkList,imagenet_labels):
@@ -199,10 +200,10 @@ if __name__ == '__main__':
 
 
     #WORKING MODELS
-    ResNet50Model(imageLinks, imagenet_labels)
-    ResNet152Model(imageLinks,imagenet_labels)
-    VGG16Model(imageLinks,imagenet_labels)
-    VGG19Model(imageLinks,imagenet_labels)
+    #ResNet50Model(imageLinks, imagenet_labels)
+    #ResNet152Model(imageLinks,imagenet_labels)
+    #VGG16Model(imageLinks,imagenet_labels)
+    #VGG19Model(imageLinks,imagenet_labels)
     xCeptionModel(imageLinks,imagenet_labels)
 
 
